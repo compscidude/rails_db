@@ -3,12 +3,16 @@
 
 <div class="container">
 
-    <%= link_to user.name, user %>
-    <%= user.name %> - <%= user.age %> <br>
-    <%= user.email %> <br>
+    <div class="row">
+        <div class="col-sm-6"> 
+            <%= link_to user.name, user %>
+            <%= user.name %> - <%= user.age %> <br>
+            <%= user.email %> <br>
+        </div>
+    </div>
 
-    <div class="posts">
-         <h3> <%= pluralize(user.posts.count, "Post") %> </h3>
+    <div class="col-sm-12 posts">
+        <div class="page-header"> <h3> <%= pluralize(user.posts.count, "Post") %> </h3> </div>
          <%= render partial: 'shared/post', collection: user.posts %>
     </div>
 
