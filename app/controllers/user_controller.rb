@@ -4,4 +4,7 @@ class UserController < ApplicationController
         render :plain => "hello world"
     end 
 
+    
+
+
 end
