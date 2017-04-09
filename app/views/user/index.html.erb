@@ -1,0 +1,17 @@
+
+<% @User.each do |user| %>
+
+<div class="box">
+
+    <%= link_to user.name, user %>
+    <%= user.name %> - <%= user.age %> <br>
+    <%= user.email %> <br>
+
+    <div class="posts">
+         <h3> <%= pluralize(user.posts.count, "Post") %> </h3>
+         <%= render partial: 'shared/post', collection: user.posts %>
+    </div>
+
+</div>
+
+<% end %>

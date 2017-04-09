@@ -1,0 +1,30 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.box{
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 5px solid black;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+
+.posts{
+    margin-top: 5px;
+}

@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+5.times do |index| 
+    user = User.create!(name: "User - #{index}", email: "User-#{index}@gmail.com", age: 26)
+    10.times do |index2| 
+        user.posts.create(content: "Post - #{index} :: #{index2}")
+    end
+end
+
+
+

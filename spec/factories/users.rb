@@ -1,8 +1,5 @@
 FactoryGirl.define do
 
-
-  after(:build) { |object| puts "Built #{object.name}"}
-
   sequence :email do |n|
     "random_email#{n}@gmail.com"
   end
@@ -15,7 +12,7 @@ FactoryGirl.define do
 
     sequence(:name) { |n| "User-#{n}" }
     email "Kevin@gmail.com"
-    age 15
+    age 20
 
     # traits
     trait :no_email do

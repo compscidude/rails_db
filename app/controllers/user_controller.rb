@@ -1,9 +1,12 @@
 class UserController < ApplicationController
    
     def index
-        render :plain => "hello world"
+        @User = User.all
     end 
 
+    def show
+        @User = User.find(params[:id])
+    end 
     
 
 
